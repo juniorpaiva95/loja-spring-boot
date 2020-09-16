@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    container_name: digivox_app
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    networks:
+      - digi-network
+  db:
+    container_name: digivox_db
+    image: postgres
+    volumes:
+      - "./.docker/pg-data:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+      POSTGRES_DB: dbdigivox
+    ports:
+      - "5432:5432"
+    networks:
+      - digi-network
+
+networks:
+  digi-network:
+    driver: bridge

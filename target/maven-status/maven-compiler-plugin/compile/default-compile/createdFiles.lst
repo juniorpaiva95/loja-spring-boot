@@ -1,0 +1,15 @@
+com/digivox/desafio/item/repository/ItemRepository.class
+com/digivox/desafio/item/dto/ItemCreatedDTO.class
+com/digivox/desafio/item/models/Reserva$ReservaBuilder.class
+com/digivox/desafio/item/models/TipoItem.class
+com/digivox/desafio/item/repository/ClienteRepository.class
+com/digivox/desafio/item/repository/TipoItemRepository.class
+com/digivox/desafio/item/repository/ReservaRepository.class
+com/digivox/desafio/DesafioApplication.class
+com/digivox/desafio/item/models/Item$ItemBuilder.class
+com/digivox/desafio/item/models/Item.class
+com/digivox/desafio/item/controllers/ItemController.class
+com/digivox/desafio/item/services/ItemService.class
+com/digivox/desafio/item/models/Reserva.class
+com/digivox/desafio/item/models/TipoItem$TipoItemBuilder.class
+com/digivox/desafio/item/models/Cliente.class

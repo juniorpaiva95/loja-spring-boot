@@ -1,0 +1,12 @@
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/DesafioApplication.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/services/ItemService.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/repository/ItemRepository.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/models/Reserva.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/models/Cliente.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/controllers/ItemController.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/models/Item.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/repository/ClienteRepository.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/repository/ReservaRepository.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/dto/ItemCreatedDTO.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/repository/TipoItemRepository.java
+/home/junior/Projetos/Challenges/Digivox/loja-api/src/main/java/com/digivox/desafio/item/models/TipoItem.java
