@@ -9,11 +9,11 @@ public class StandardErrorException implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
-    private Instant timestamp;
-    private Integer status;
-    private String error;
-    private String message;
-    private String path;
+    protected Instant timestamp;
+    protected Integer status;
+    protected String error;
+    protected String message;
+    protected String path;
 
     public StandardErrorException() {
 

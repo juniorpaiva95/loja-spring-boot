@@ -1,5 +1,6 @@
 package com.digivox.desafio.item.services;
 
+import com.digivox.desafio.exceptions.ResourceNotFoundException;
 import com.digivox.desafio.item.dto.ItemCreatedDTO;
 import com.digivox.desafio.item.dto.ItemDTO;
 import com.digivox.desafio.item.models.Item;
@@ -28,25 +29,16 @@ public class ItemService {
         return repository.findAll().stream().map(ItemDTO::new).collect(Collectors.toList());
     }
 
-    public ItemDTO create(ItemCreatedDTO itemCreate) throws Exception {
-        log.info("ItemService -> create");
+    public ItemDTO create(ItemCreatedDTO itemCreate) {
+        log.info("ItemService -> create " + itemCreate.toString());
 
         TipoItem tipoItem = tipoItemService.getOne(itemCreate.getTipoItemId());
         if (tipoItem == null) {
-            throw new Exception("Tipo informado não existe");
+            throw new ResourceNotFoundException(itemCreate.getTipoItemId());
         }
-
+    log.info(new Item(null, itemCreate.getDescription(), itemCreate.getQuantity(), itemCreate.getPrice(), tipoItem).toString());
         return new ItemDTO(repository.save(
-                new Item(
-                        null,
-                        itemCreate.getDescription(),
-                        itemCreate.getQuantity(),
-                        itemCreate.getPrice(),
-                        tipoItem,
-                        itemCreate.getReservas()
-                )
+                  new Item(null, itemCreate.getDescription(), itemCreate.getQuantity(), itemCreate.getPrice(), tipoItem)
         ));
-
-//                new Item(null, itemCreate.getDescription(), itemCreate.getQuantity(), itemCreate.getPrice(), itemCreate.getReservas())))
     }
 }

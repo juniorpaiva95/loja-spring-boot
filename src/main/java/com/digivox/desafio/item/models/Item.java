@@ -40,4 +40,11 @@ public class Item {
             inverseJoinColumns={@JoinColumn(name="tb_reserva_id")})
     private List<Reserva> reservas = new ArrayList<Reserva>();
 
+    public Item(UUID id, String description, Double quantity, Double price, TipoItem tipoItem) {
+        this.id = id;
+        this.description = description;
+        this.quantity = quantity;
+        this.price = price;
+        this.tipoItem = tipoItem;
+    }
 }

@@ -26,7 +26,6 @@ public class ItemDTO {
     private Double price;
 
     private TipoItem tipoItem;
-//    private List<Reserva> reservas;
 
     public ItemDTO(Item item) {
         this(item.getId(), item.getDescription(), item.getQuantity(), item.getPrice(), item.getTipoItem());
