@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Table(name = "tb_tipo_item")
@@ -20,7 +21,7 @@ public class TipoItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private UUID id;
 
     private String description;
 

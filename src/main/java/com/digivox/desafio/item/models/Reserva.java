@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Table(name = "tb_reserva")
@@ -17,11 +18,10 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class Reserva {
-    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private UUID id;
 
     @ManyToOne
     @JoinColumn(name = "cliente_id")
